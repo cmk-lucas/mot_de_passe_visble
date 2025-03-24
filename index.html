@@ -10,17 +10,25 @@
     <nav class="navbar">  
         <span class="password-status">Mot de passe visible</span>  
     </nav>  
-    <form>
-        <div class="pass-holder">
-            <label>Password</label>
-            <input type="password" id="pass" placeholder="Enter your password">
-        </div>
-        <div>
-            <input type="checkbox" onclick="change()">
-            <label class="txt">Show Password</label>
-        </div>
-    </form>
-
+    <form>  
+        <div class="email-holder">  
+            <label for="email">Email</label>  
+            <input type="email" id="email" placeholder="Enter your email" required>  
+        </div>  
+        <div class="pass-holder">  
+            <label for="pass">Password</label>  
+            <input type="password" id="pass" placeholder="Enter your password" required>  
+        </div>  
+        <div>  
+            <input type="checkbox" id="showPass" onclick="change()">  
+            <label class="txt" for="showPass">Show Password</label>  
+        </div>  
+        <div>  
+            <button type="submit">Submit</button>  
+        </div>  
+    </form>  
+    
+     
     <script>
         function change(){
             var pass  = document.getElementById('pass');
