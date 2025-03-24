@@ -15,6 +15,30 @@ body {
 .password-status {  
     color: white;  
     font-size: 16px;  
+    display: inline-block; /* Pour aligner correctement */  
+    margin-right: 20px; /* Espacement avec les liens */  
+}  
+
+.nav-links {  
+    display: inline-block; /* Permet d'afficher les liens sur la même ligne */  
+    margin: 0;  
+    padding: 0;  
+    list-style: none;  
+}  
+
+.nav-links li {  
+    display: inline; /* Affiche les éléments de la liste en ligne */  
+    margin: 0 10px; /* Espacement entre les liens */  
+}  
+
+.nav-links a {  
+    color: white;  
+    text-decoration: none;  
+    transition: color 0.3s;  
+}  
+
+.nav-links a:hover {  
+    color: #4CAF50; /* Change la couleur au survol */  
 }  
 form {
     width: 100%;
