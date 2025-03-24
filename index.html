@@ -6,6 +6,27 @@
     <title>visible mot de passe</title>
 </head>
 <body>
-    
+    <form>
+        <div class="pass-holder">
+            <label>Password</label>
+            <input type="password" id="pass" placeholder="Enter your password">
+        </div>
+        <div>
+            <input type="checkbox" onclick="change()">
+            <label class="txt">Show Password</label>
+        </div>
+    </form>
+
+    <script>
+        function change(){
+            var pass  = document.getElementById('pass');
+            if (pass.type == "password") {
+                pass.type= 'text';
+            }else{
+                pass.type= 'password';
+            }
+        }
+        
+    </script>
 </body>
 </html>
